@@ -1,0 +1,32 @@
+{
+  "name": "lesson-report",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test/*.test.js",
+    "serve": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crinax/lesson-report.git"
+  },
+  "author": "Crinax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crinax/lesson-report/issues"
+  },
+  "homepage": "https://github.com/Crinax/lesson-report#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "dotenv": "^10.0.0",
+    "mocha": "^9.0.2"
+  }
+}
