@@ -17,6 +17,7 @@ describe('=> POST', function() {
         }
     })
     beforeEach(function(done) {
+        this.timeout(60000)
         chai.request('localhost:3000').post('/lessons').send(request).end((err, res) => {
             response = res
             done()

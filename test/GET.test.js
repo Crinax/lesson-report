@@ -8,7 +8,7 @@ var response
 describe('=> GET', function() {
   before(function() { request = { date: '2020-10-43' } })
   beforeEach(function(done) {
-    this.timeout(10000)
+    this.timeout(60000)
     chai.request('localhost:3000').get('/').send(request).end((err, res) => {
       response = res
       done()
